@@ -55,10 +55,15 @@ const teamMembers = [
         image: 'barbara-ramos-graphic-designer.jpg'
     }
 ]
+
 //Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 for (const key in teamMembers) {
     console.log(teamMembers[key]);
+    
 }
+//Stampare le stesse informazioni su DOM sottoforma di stringhe
+let myString = JSON.stringify(teamMembers);
+document.getElementById("profile").innerHTML = myString;
 
 
 
