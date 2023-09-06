@@ -6,3 +6,8 @@ informazioni: nome, ruolo e foto.*/
 /*Creare l’array di oggetti con le 
 informazioni fornite.*/
 
+const teamMembers = [
+    {
+        
+    }
+]
