@@ -22,11 +22,7 @@ Barbara Ramos
 Graphic Designer	
 barbara-ramos-graphic-designer.jpg*/
 
-/*Creare l’array di oggetti con le 
-informazioni fornite.*/
-
-
-
+//Creare l’array di oggetti con le informazioni fornite.
 const teamMembers = [
     {
         name: 'Wayne Barnett',
@@ -59,3 +55,11 @@ const teamMembers = [
         image: 'barbara-ramos-graphic-designer.jpg'
     }
 ]
+//Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+for (const key in teamMembers) {
+    console.log(teamMembers[key]);
+}
+
+
+
+
