@@ -66,17 +66,22 @@ for (const key in teamMembers) {
     let image = object.image
 
     let element = document.createElement('div')
-    let elementImage = document.createElement('img')
-    elementImage.src = './img/' + image 
-    console.log(elementImage);
-    element.append(name + ' - ' + role + ' - ')
+    element.append(name + ' - ' + role )
     console.log(element)
 
     let profile = document.getElementById('profile')
     profile.append(element)
 
     //Trasformare la stringa foto in una immagine effettiva
+    let elementImage = document.createElement('img')
+    elementImage.src = './img/' + image 
+    console.log(elementImage);
+    profile.appendChild(elementImage)
+
+
 }
+    
+   
 
 
 
