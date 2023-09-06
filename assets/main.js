@@ -58,22 +58,27 @@ const teamMembers = [
 //Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 for (const key in teamMembers) {
     console.log(teamMembers[key]);
-    
+
+    //Stampare le stesse informazioni su DOM sottoforma di stringhe
     let object = teamMembers[key];
     let name = object.name
     let role = object.role
     let image = object.image
 
     let element = document.createElement('div')
-    element.append(name + ' - ' + role + ' - ' + image )
+    let elementImage = document.createElement('img')
+    elementImage.src = './img/' + image 
+    console.log(elementImage);
+    element.append(name + ' - ' + role + ' - ')
     console.log(element)
 
     let profile = document.getElementById('profile')
     profile.append(element)
 
-
+    //Trasformare la stringa foto in una immagine effettiva
 }
-//Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+
 
 
 
